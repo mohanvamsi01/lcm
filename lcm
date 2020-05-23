@@ -1,0 +1,21 @@
+
+#include <stdio.h>
+int main() 
+{
+    int a,b,min;
+    printf("Input first number:",a);
+    scanf("%d",&a);
+    printf("Input second number:",b);
+    scanf("%d",&b);
+    min = (a>b) ? a : b;
+    while (1)
+    {
+        if (min % a == 0 && min %b==0)
+        {
+            printf("The LCM of %d and %d= %d.",a,b,min);
+            break;
+        }
+        ++min;
+    }
+    return 0;
+}
